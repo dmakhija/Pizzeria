@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Conestoga Pizzeria</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<script src="./js/dataValidation.js"></script>
+		<link href="styles/ConestogaPizzeria.css" rel="stylesheet" type="text/css" />
+
+	</head>
+
+	<body>
+		<h1 id="head">Conestoga Pizzeria</h1>
+			<div id="container">
+<!-- onsubmit="return isRegistrationFormValid();"-->
+			<form method="post" action="php/dataValidation.php">
+			<div id="sideContent">
+			<div class="input">
+				<label for="forename" class="inputLabel" >Forename:</label>
+				<input type="text" placeholder="e.g. John" id="forename"  name="forename" required />
+			</div>
+
+			<div class="input">
+				<label for="surname"  class="inputLabel" >Surname:</label>
+				<input type="text" placeholder="e.g. Doe" id="surname" name="surname" required />
+			</div>
+
+			<div class="input">
+				<label for="city">City:</label>
+				<input type="text" placeholder="" id="city" name="city" required />
+			</div>
+
+			<div class="input">
+				<label for="province">Province</label>
+				<select id="province" name="province">
+					<option value="0">Select Province</option>
+					<option value="ab">Alberta</option>
+					<option value="bc">British Columbia</option>
+					<option value="mb">Manitoba</option>
+					<option value="nb">New Brunswick</option>
+					<option value="nl">Newfoundland and Labrador</option>
+					<option value="nt">Northwest Territories</option>
+					<option value="ns">Nova Scotia</option>
+					<option value="nu">Nunavut</option>
+					<option value="on">Ontario</option>
+					<option value="pe">Prince Edward Island</option>
+					<option value="qc">Quebec</option>
+					<option value="sk">Saskatchewan</option>
+					<option value="yt">Yukon</option>
+				</select>
+			</div>
+
+			<div class="input">
+				<label for="postalCode">Postal code</label>
+				<input type="text" placeholder="e.g. N5H 6B8" id="postalCode" name="postalCode" required />
+			</div>
+
+			<div class="input">
+				<label for="telephoneNumber">Telephone number</label>
+				<input type="text" placeholder="e.g. 000-000-0000" id="telephoneNumber" name="telephoneNumber" required />
+			</div>
+
+			<div class="input">
+				<label for="emailAddress">Email address</label>
+				<input type="email" placeholder="user@email.com" id="emailAddress" name="emailAddress" required />
+			</div>
+
+			</div>
+			<div id="primaryContent">
+			<div class="input_right">
+				<label for="pizzaQuantity">Number of Pizzas</label>
+				<select id="pizzaQuantity" name="pizzaQuantity">
+					<option value="0">Select Quantity</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+				</select>
+				<p id="notes">Please call us in advance for order that is greater than 9 pizzas.</p>
+			</div>
+			<div class="input_right">
+				<fieldset>
+					<legend>Pizza Size</legend>
+					<input type="radio" name="pizzaSize" id="small" value="s">Small
+					<input type="radio" name="pizzaSize" value="m">Medium
+					<input type="radio" name="pizzaSize" value="l">Large
+					<input type="radio" name="pizzaSize" value="xl">Extra Large
+				</fieldset>
+			</div>
+			<div class="input_right">
+				<fieldset>
+				<legend>Crust Type</legend>
+					<input type="radio" name="crustType" id="handTossed" value="handTossed">Hand-tossed
+					<input type="radio" name="crustType" value="pan">Pan
+					<input type="radio" name="crustType" value="stuffed">Stuffed Crust
+					<input type="radio" name="crustType" value="Thin">Thin Crust
+				</fieldset>
+			</div>
+			<div class="input_right">
+			<label>Topping</label><br />
+			<div id="topping">
+				<div id="meatTopping">
+				<input type="checkbox" name="toppings[]" id="sausage" value="sausage">Sausage
+				<input type="checkbox" name="toppings[]" value="pepperoni">Pepperoni
+				<input type="checkbox" name="toppings[]" value="beef">Beef
+				<input type="checkbox" name="toppings[]" value="bacon">Bacon
+				<input type="checkbox" name="toppings[]" value="chicken">Chicken
+				<input type="checkbox" name="toppings[]" value="ham">Ham
+				</div>
+				<div id="vegeTopping">
+				<input type="checkbox" name="toppings[]" value="olive">Olive
+				<input type="checkbox" name="toppings[]" value="pepper">Pepper
+				<input type="checkbox" name="toppings[]" value="tomato">Tomato
+				<input type="checkbox" name="toppings[]" value="mushroom">Mushroom
+				<input type="checkbox" name="toppings[]" value="pineapple">Pineapple
+				</div>
+			</div>
+			</div>
+			</div>
+			<div style="clear: both;"></div>
+			<div id="submit">
+				<input type="submit" value="Submit" class="button" />
+				<input type="reset" value="Reset" class="button" />
+			</div>
+
+		</form>
+		</div>
+
+	<footer id="footer">
+		Assignment #1
+	</footer>
+	</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

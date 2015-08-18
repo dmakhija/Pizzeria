@@ -1,0 +1,102 @@
+/*	ConestogaPizzeria.css
+	 Group Members:
+		Kostiantyn Vasylenko(6917736)
+		Il Gon Kim(6658751)
+		Durga Makhija(6857874)
+		Yuan Xu(6834972)
+	 Revision History: 2014.10.04: Created
+					   2014.10.09: Updated
+*/
+
+body { 
+	text-align: center; 
+	background-image: url('../pizza-food-table-board-glass-wine-italy-pizza.jpg');
+	background-repeat: inherit;
+	font-family: Sans-serif;
+} /* Rule solves centring problem in Internet Explorer. */
+
+#container {
+	margin: 25px auto;
+	padding: 3%;
+	text-align: left;
+	width: 90%;
+	max-width:1000px;
+	background: white;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+	font-weight: bold;
+}
+
+#sideContent {
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 40%;
+}
+
+#primaryContent {
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 60%;
+}
+
+.userInput {
+	float:right;
+}
+
+.inputLabel{
+	float:left;
+}
+
+#submit {
+	 margin-top: 10px;
+	 margin-bottom: 20px;
+}
+
+/* Rule solves width problem in Internet Explorer. */
+#ieroot#primaryContent { width: 598px; }
+
+p { 
+	margin: 0;
+	text-align: left;
+}
+
+.button {
+	background-color: Transparent;
+	background-repeat: no-repeat;
+	float: right;
+	width: 7em;
+	height: 2em;
+	font-weight: bold;
+}
+
+#head {
+	color: white;
+	font-size: 5em;
+}
+
+.input {
+	margin-bottom: 10px;
+	margin-right: 5%;
+	float: right;
+	clear: both;
+}
+
+.input_right {
+	margin-bottom: 10px;
+	margin-right: 5%;
+	float: left;
+	clear: both;
+}
+
+#notes {
+	font-weight: normal;
+	font-style: italic;
+}
+
+#footer{
+	color: white;
+	font-weight: bold;
+	font-style: italic;
+}
